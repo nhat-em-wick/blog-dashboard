@@ -1,0 +1,22 @@
+.toolbar-class {
+  .rdw-option-wrapper {
+    width: 3rem;
+    height: 3rem;
+    img {
+      width: unset;
+      height: unset;
+    }
+  }
+}
+
+.wrapper-class {
+  border: 1px solid var(--border-color);
+  
+}
+
+.editor-class {
+  padding: 0 1.5rem;
+  min-height: 30rem;
+  max-height: 50rem;
+  font-size: var(--small-font-size);
+}

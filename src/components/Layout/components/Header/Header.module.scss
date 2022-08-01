@@ -1,0 +1,114 @@
+.header {
+  height: var(--header-height);
+  position: fixed;
+  background-color: var(--bg-color);
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  padding-left: calc(var(--sidebar-width) + 3rem);
+  box-shadow: 0 1px 1px rgba($color: #000000, $alpha: 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3rem;
+  transition: all .4s ease-in-out;
+  &.shrink {
+    padding-left: calc(var(--sidebar-shrink) + 3rem);
+  }
+  &-left {
+    width: 30rem;
+    h3 {
+      font-size: var(--h3-font-size);
+      color: var(--title-color);
+      text-transform: capitalize;
+    }
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    &__input {
+      width: 25rem;
+      height: 4.2rem;
+      padding: 0 1.7rem;
+      outline: none;
+      border: none;
+      color: var(--text-color);
+      background-color: var(--bg-input);
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border: 1px solid var(--border-color);
+      border-right: 0;
+    }
+    &__button {
+      width: 5.6rem;
+      height: 4.2rem;
+      position: relative;
+      font-size: 2rem;
+      background-color: var(--bg-input);
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border: 1px solid var(--border-color);
+      border-left: 0;
+      cursor: pointer;
+      &:hover {
+        color: var(--primary-color);
+      }
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  &-right {
+    &__item {
+
+    }
+  }
+}
+
+.user {
+  position: relative;
+  &-avatar {
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  &-action {
+    display: none;
+    position: absolute;
+    min-width: 15rem;
+    background-color: var(--bg-color);
+    top: calc(100% + 1.5rem);
+    box-shadow: var(--box-shadow-dropdown);
+    right: 0;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    &.active {
+      display: block;
+    }
+    &__item {
+      cursor: pointer;
+    }
+    &__icon {
+      line-height: 0;
+      font-size: 1.8rem;
+    }
+    &__text {
+      font-size: var(--small-font-size);
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .5rem 1.5rem;
+      text-transform: capitalize;
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

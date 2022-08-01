@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-color: #e23428;
+  --primary-color-hover: #bd241a;
+  --secondary-color: #135846;
+  --secondary-color-hover: #104b3c;
+  --primary-color-light: rgba(226, 52, 40, 0.1);
+  --danger-color: #d9534f;
+  --bg-color: #fff;
+  --bg2-color: #f8f8f8;
+  --bg-input: #fcfcfc;
+  --border-color: #ccc7c7;
+  --box-shadow-dropdown: 0 0 2.5rem 0 rgb(82 63 105 / 10%);
+
+  --text-color-light: #96a0af;
+  --text-color: #6e6e6e;
+  --title-color: #000;
+
+  --large-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --small-font-size: 1.4rem;
+  --smaller-font-size: 1.3rem;
+
+  --h1-font-size: 4.209rem;
+  --h2-font-size: 3.157rem;
+  --h3-font-size: 2.369rem;
+  --h4-font-size: 1.777rem;
+  --h5-font-size: 1.333rem;
+
+  --sidebar-width: 24rem;
+  --sidebar-shrink: 9rem;
+  --header-height: 7.6rem;
+
+  // input
+  --large-height-input: 5.8rem;
+  --medium-height-input: 4.2rem;
+  --small-height-input: 3.8rem
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--normal-font-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,12 @@
+.heading {
+  text-align: center;
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

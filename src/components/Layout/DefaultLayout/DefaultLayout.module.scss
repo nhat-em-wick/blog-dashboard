@@ -1,0 +1,11 @@
+.main {
+  padding-left: calc(var(--sidebar-width) + 3rem);
+  padding-top: calc(var(--header-height) + 5rem);
+  padding-right: 3rem;
+  transition: all .4s ease-in-out;
+  background-color: var(--bg2-color);
+  min-height: 100vh;
+  &.shrink {  
+    padding-left: calc(var(--sidebar-shrink) + 3rem);
+  }
+}

@@ -1,0 +1,22 @@
+.search-box {
+  position: relative;
+  &__input {
+    height: var(--small-height-input);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 3.5rem;
+    transition: .3s ease-in-out;
+    &:focus {
+      border-color: var(--primary-color);
+    }
+  }
+  &__icon {
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+  }
+}

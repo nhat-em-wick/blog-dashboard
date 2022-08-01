@@ -1,0 +1,19 @@
+.wrapper {
+  margin-top: 1.5rem;
+}
+.inner {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+}
+.item {
+  line-height: 0;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  font-size: var(--small-font-size);
+  &.active {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}
