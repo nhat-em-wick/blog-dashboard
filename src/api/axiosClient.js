@@ -1,8 +1,8 @@
 import axios from "axios";
 import queryString from "query-string";
 
-const baseURL = process.env.REACT_APP_API_URL;
-// const accessToken = JSON.parse(JSON.parse(localStorage.getItem('persist:store'))?.auth)?.user?.access_token || null
+const baseURL = process.env.REACT_APP_URL_API;
+
 
 const getToken = () => {
   const store = JSON.parse(localStorage.getItem("persist:store"));

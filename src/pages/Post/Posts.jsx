@@ -85,7 +85,7 @@ const Blog = () => {
           q: value
          })}/>
         </div>
-        <Button onClick={() => navigate(`/blog/add`)} classNames="btn btn-primary btn-sm">
+        <Button onClick={() => navigate(`/post/add`)} classNames="btn btn-primary btn-sm">
           Thêm bài viết
         </Button>
       </section>
